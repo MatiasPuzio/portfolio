@@ -1,12 +1,19 @@
 .header
 
 {background-color: #0f6fc5 ;
-    align-items: left;
+   
 
 }
 
 .logo
 {width:200px;
- 
+
+
+}
+
+.marker
+
+{
+border: solid red 1px;
 
 }

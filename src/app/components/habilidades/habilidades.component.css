@@ -1,0 +1,107 @@
+.Skills .skill_set{
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+	cursor: pointer;
+	margin-bottom: 14px;
+}
+.Skills .skill_set .icon{
+	font-size: 40px;
+	color: var(--theme_color);
+	padding-left: 0;
+	padding-right: 5px;
+}
+.Skills .skill_set h5{
+	margin-bottom: 0!important;
+	padding-left: 10px;
+}
+.Skills .skill_set span{
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--light_silver);
+	padding-left: 10px;
+}
+.Skills .skill_set .expand_more{
+	font-size: 24px;
+	margin-left: auto;
+	color: var(--light_silver);
+}
+.Skills .skill_set.show_skills .expand_more{
+	transform: rotate(90deg);
+	margin-left: auto;
+	padding: 0;
+}
+.Skills .skill_set.show_skills + .skills{
+	display: block;
+}
+.skills{
+	display: none;
+	margin-bottom: 30px;
+}
+.skills .label{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 85%;
+	padding: 8px 0;
+}
+.skills .label span{
+	font-weight: 500;
+	color: var(--light_silver);
+}
+.skills .progress_bar{
+	height: 10px;
+	width: 85%;
+	background: var(--mode_color_v2);
+	border-radius: 10px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.skills .progress_bar .progress_indi{
+	position: absolute;
+	width: 95%;
+	background: var(--theme_color);
+	height: 10px;
+	border-radius: 10px;
+	top: 0;
+	left: 0;
+}
+.progress_container .col-6{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.progress_container .circular_progress{
+	width: 75%;
+	aspect-ratio: 1 / 1;
+	background: var(--mode_color_v2);
+	border-radius: 50%;
+	position: relative;
+	background: conic-gradient(var(--theme_color) 0%,var(--theme_color) 90%,#F2F2F2 90%, #F2F2F2 100%);
+}
+.progress_container .circular_progress:before{
+	content: '';
+	position: absolute;
+	height: calc( 100% - 12px );
+	width: calc( 100% - 12px );
+	background: var(--mode_color);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 50%;
+}
+.progress_container .circular_progress span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: var(--light_silver);
+	font-weight: 500;
+}
+.progress_container .circular_progress + span{
+	font-weight: 500;
+	color: var(--light_silver);
+	margin: 12px 0 25px 0;
+}
