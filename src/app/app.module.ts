@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { PruebaComponent } from './components/prueba/prueba.component';
-
+import { HttpClient } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
