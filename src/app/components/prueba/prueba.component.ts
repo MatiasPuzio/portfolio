@@ -6,13 +6,15 @@ import { ServiceService } from 'src/app/servicios/service.service';
   styleUrls: ['./prueba.component.css']
 })
 export class PruebaComponent implements OnInit {
-    educationList:any;
+    educacionList:any;
   constructor(private datosPortfolio:ServiceService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data=>)
+    this.datosPortfolio.obtenerDatos().subscribe(data=>{
 
-
+    
+       this.educacionList=data.education;
+      })
   }
 
 }

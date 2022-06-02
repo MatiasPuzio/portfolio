@@ -2,10 +2,11 @@
 <div class="container fluid my-5" >
 
   <ul class="list-group">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifth one</li>
+    <li class="list-group-item" *ngFor="let educacion of educacionList">
+    <img class="logo-image" [src]="educacion.img">
+    <h3>{{educacion.schooll}}</h3>
+    <p>{{educacion.career}}</p>
+    <p>{{educacion.start}}-{{educacion.end}}</p></li>
+
   </ul>
 </div>

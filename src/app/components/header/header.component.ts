@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
 
     this.datosPortfolio.obtenerDatos().subscribe(data=>{
     
-       this.miPortfolio=data;
+       this.miPortfolio=data[0];
 
     });
 

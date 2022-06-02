@@ -5,15 +5,21 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ServiceService {
-
+    url:string="localhost:8080"
   constructor(private http:HttpClient) { 
 
   }
 
-obtenerDatos():Observable<any>{
-  return this.http.get('./assets/data/data.json');
+obtenerDatosPersona():Observable<any>{
+  return this.http.get(this.url+"/persona");
+}
+
+
+
+
+obtenerDatosEducacion():Observable<any>{
+  return this.http.get(this.url+"/educacion");
 }
 
 
 }
-

@@ -17,3 +17,9 @@
 border: solid red 1px;
 
 }
+
+.mi_foto
+{
+    height: 200px;
+    border-radius: 50%;
+}
